@@ -1,4 +1,4 @@
-// File Name: types.ts
+// Is file ka naam 'types.ts' hona chahiye
 export interface HybridSystemData {
   status: string;
   engine: string;
