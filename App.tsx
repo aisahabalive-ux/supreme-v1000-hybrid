@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
-// Humne import path ko ekdum simple rakha hai
-import { HybridSystemData } from './types'; 
+import React from 'react';
+
+// Simple interface taaki error na aaye
+interface SystemData {
+  status: string;
+  engine: string;
+}
 
 function App() {
-  const [data] = useState<HybridSystemData>({
+  const data: SystemData = {
     status: "SYSTEM ONLINE",
-    engine: "V1000 SOVEREIGN",
-    version: "1.0.0",
-    lastSync: new Date().toLocaleTimeString()
-  });
+    engine: "V1000 SOVEREIGN"
+  };
 
   return (
     <div style={{ 
@@ -16,20 +18,18 @@ function App() {
       color: '#0f0', 
       height: '100vh', 
       display: 'flex', 
-      flexDirection: 'column', 
-      alignItems: 'center', 
-      justifyContent: 'center',
-      fontFamily: 'monospace'
+      justifyContent: 'center', 
+      alignItems: 'center',
+      fontFamily: 'monospace' 
     }}>
-      <div style={{ border: '1px solid #0f0', padding: '20px' }}>
-        <h1>NEXUS CORE</h1>
+      <div style={{ border: '2px solid #0f0', padding: '20px', textAlign: 'center' }}>
+        <h1>🚀 NEXUS V1000</h1>
         <p>STATUS: {data.status}</p>
         <p>ENGINE: {data.engine}</p>
-        <p>TIME: {data.lastSync}</p>
       </div>
     </div>
   );
 }
 
-export default App;  
-   
+export default App;
+ 
