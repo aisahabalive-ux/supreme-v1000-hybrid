@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// Yahan './types.ts' likhna zaroori hai (Pehle sirf './types' tha)
+// DHAYAN DEIN: Yahan './types.ts' (extension ke saath) likha hai
 import { HybridSystemData, NexusState } from './types.ts'; 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
       <div style={{ marginTop: '20px', padding: '15px', border: '1px solid #333' }}>
         <p><strong>SYSTEM STATUS:</strong> {systemData.status}</p>
         <p><strong>ENGINE:</strong> {systemData.engine}</p>
+        <p><strong>VERSION:</strong> {systemData.version}</p>
         <p><strong>LAST SYNC:</strong> {systemData.lastSync}</p>
       </div>
     </div>
