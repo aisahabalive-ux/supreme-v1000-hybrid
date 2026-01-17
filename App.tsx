@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// Yahan extension .ts lagana zaroori hai
+// Yahan './types.ts' likhna zaroori hai (Pehle sirf './types' tha)
 import { HybridSystemData, NexusState } from './types.ts'; 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div style={{ backgroundColor: '#000', color: '#0f0', minHeight: '100vh', padding: '20px', fontFamily: 'monospace' }}>
-      <h1 style={{ borderBottom: '1px solid #0f0' }}>🚀 SUPREME V1000 HYBRID</h1>
+      <h1 style={{ borderBottom: '2px solid #0f0' }}>🚀 NEXUS V1000 HYBRID</h1>
       <div style={{ marginTop: '20px', padding: '15px', border: '1px solid #333' }}>
         <p><strong>SYSTEM STATUS:</strong> {systemData.status}</p>
         <p><strong>ENGINE:</strong> {systemData.engine}</p>
