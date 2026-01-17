@@ -1,22 +1,35 @@
 import React, { useState } from 'react';
-// Yahan extension (.ts) nahi hona chahiye
-import { HybridSystemData, NexusState } from './types'; 
+// Humne import path ko ekdum simple rakha hai
+import { HybridSystemData } from './types'; 
 
 function App() {
-  const [systemData] = useState<HybridSystemData>({
-    status: "Infinite Hybrid Active",
-    engine: "V1000 Supreme Sovereign",
-    version: "Nexus-Core v1.0",
-    lastSync: new Date().toLocaleString()
+  const [data] = useState<HybridSystemData>({
+    status: "SYSTEM ONLINE",
+    engine: "V1000 SOVEREIGN",
+    version: "1.0.0",
+    lastSync: new Date().toLocaleTimeString()
   });
 
   return (
-    <div style={{ backgroundColor: '#000', color: '#0f0', minHeight: '100vh', padding: '20px', fontFamily: 'monospace' }}>
-      <h1>🚀 NEXUS V1000</h1>
-      <p>STATUS: {systemData.status}</p>
-      <p>ENGINE: {systemData.engine}</p>
+    <div style={{ 
+      backgroundColor: '#000', 
+      color: '#0f0', 
+      height: '100vh', 
+      display: 'flex', 
+      flexDirection: 'column', 
+      alignItems: 'center', 
+      justifyContent: 'center',
+      fontFamily: 'monospace'
+    }}>
+      <div style={{ border: '1px solid #0f0', padding: '20px' }}>
+        <h1>NEXUS CORE</h1>
+        <p>STATUS: {data.status}</p>
+        <p>ENGINE: {data.engine}</p>
+        <p>TIME: {data.lastSync}</p>
+      </div>
     </div>
   );
 }
 
-export default App;         
+export default App;  
+   
