@@ -1,4 +1,4 @@
-// Is file ko GitHub par 'types.ts' naam se save karein
+// File Name: types.ts
 export interface HybridSystemData {
   status: string;
   engine: string;
@@ -11,4 +11,3 @@ export interface NexusState {
   loadFactor: number;
   efficiency: string;
 }
-
