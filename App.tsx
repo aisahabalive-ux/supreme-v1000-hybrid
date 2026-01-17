@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-// Extension .ts lagana yahan sabse zaroori hai
-import { HybridSystemData, NexusState } from './types.ts'; 
+// Yahan humne extension hata diya hai, Vite ise apne aap dhund lega
+import { HybridSystemData, NexusState } from './types'; 
 
 function App() {
   const [systemData] = useState<HybridSystemData>({
@@ -11,13 +11,30 @@ function App() {
   });
 
   return (
-    <div style={{ backgroundColor: '#000', color: '#0f0', minHeight: '100vh', padding: '20px', fontFamily: 'monospace' }}>
-      <h1 style={{ borderBottom: '2px solid #0f0' }}>🚀 NEXUS V1000 HYBRID</h1>
-      <div style={{ marginTop: '20px', padding: '15px', border: '1px solid #333' }}>
-        <p><strong>SYSTEM STATUS:</strong> {systemData.status}</p>
-        <p><strong>ENGINE:</strong> {systemData.engine}</p>
-        <p><strong>VERSION:</strong> {systemData.version}</p>
-        <p><strong>LAST SYNC:</strong> {systemData.lastSync}</p>
+    <div style={{ 
+      backgroundColor: '#000', 
+      color: '#0f0', 
+      minHeight: '100vh', 
+      padding: '20px', 
+      fontFamily: 'monospace',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }}>
+      <div style={{ 
+        border: '2px solid #0f0', 
+        padding: '30px', 
+        borderRadius: '10px',
+        boxShadow: '0 0 15px #0f0'
+      }}>
+        <h1 style={{ textAlign: 'center', marginBottom: '20px' }}>🚀 SUPREME V1000</h1>
+        <div style={{ fontSize: '1.2rem', lineHeight: '2' }}>
+          <p><strong>SYSTEM:</strong> {systemData.status}</p>
+          <p><strong>ENGINE:</strong> {systemData.engine}</p>
+          <p><strong>CORE:</strong> {systemData.version}</p>
+          <p><strong>SYNC:</strong> {systemData.lastSync}</p>
+        </div>
       </div>
     </div>
   );
