@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// DHAYAN DEIN: Yahan './types.ts' (extension ke saath) likha hai
+// Extension .ts lagana yahan sabse zaroori hai
 import { HybridSystemData, NexusState } from './types.ts'; 
 
 function App() {
