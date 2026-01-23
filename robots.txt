@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://supreme-v1000-hybrid.vercel.app/sitemap.xml
+
