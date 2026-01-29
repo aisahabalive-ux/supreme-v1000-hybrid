@@ -3,34 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Infinite Unlimited Hybrid</title>
+    <title>Contact - Infinite Unlimited Hybrid Version</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 40px; background: linear-gradient(135.2deg, #f4f7f6 10%, #e9eeee 90%); min-height: 100vh; }
-        .contact-card { background: white; padding: 50px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-bottom: 5px solid #2980b9; text-align: center; }
-        h1 { color: #2c3e50; font-size: 2.2rem; margin-bottom: 10px; }
-        p { color: #7f8c8d; margin-bottom: 30px; }
-        .info-box { background: #f8f9fa; padding: 20px; border-radius: 12px; margin-top: 20px; border: 1px dashed #3498db; }
-        .email { font-size: 1.3rem; color: #2980b9; font-weight: bold; text-decoration: none; }
-        .support-text { font-size: 0.9rem; margin-top: 20px; color: #95a5a6; }
-        .badge { background: #2980b9; color: white; padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; text-transform: uppercase; }
+        :root {
+            --primary: #1a2a6c;
+            --secondary: #b21f1f;
+            --accent: #fdbb2d;
+            --glass: rgba(255, 255, 255, 0.95);
+        }
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            margin: 0;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-card { 
+            background: var(--glass);
+            padding: 60px 40px; 
+            border-radius: 30px; 
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3); 
+            border: 1px solid rgba(255,255,255,0.3);
+            text-align: center; 
+            max-width: 700px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+        .badge { 
+            background: linear-gradient(90deg, #1a2a6c, #b21f1f);
+            color: white; 
+            padding: 8px 20px; 
+            border-radius: 50px; 
+            font-size: 0.85rem; 
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        h1 { 
+            color: var(--primary); 
+            font-size: 2.8rem; 
+            margin: 10px 0;
+            font-weight: 800;
+        }
+        p.subtitle { 
+            color: #555; 
+            font-size: 1.2rem;
+            margin-bottom: 40px; 
+        }
+        .info-box { 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 20px; 
+            margin: 30px 0; 
+            border: 2px solid #eee;
+            transition: transform 0.3s ease;
+        }
+        .info-box:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary);
+        }
+        .email-label {
+            display: block;
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .email-link { 
+            font-size: 1.8rem; 
+            color: #b21f1f; 
+            font-weight: 800; 
+            text-decoration: none; 
+            word-break: break-all;
+        }
+        .email-link:hover {
+            color: var(--primary);
+        }
+        .footer-note { 
+            font-size: 0.95rem; 
+            margin-top: 30px; 
+            color: #666; 
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .brand-footer {
+            margin-top: 40px;
+            font-weight: 900;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            background: linear-gradient(to right, #1a2a6c, #b21f1f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
 <body>
     <div class="contact-card">
-        <span class="badge">Hybrid Version Support</span>
+        <span class="badge">Infinite Unlimited Hybrid Version</span>
         <h1>Get In Touch</h1>
-        <p>Aapke sawaal hamare liye mahatvapurn hain. Infinite Unlimited Hybrid team aapki madad ke liye hamesha taiyar hai.</p>
+        <p class="subtitle">Aapke sawaal hamare liye mahatvapurn hain. Hamari team aapki madad ke liye hamesha taiyar hai.</p>
         
         <div class="info-box">
-            <p style="margin-bottom: 5px; color: #333;">Official Email Address:</p>
-            <a href="mailto:your-email@gmail.com" class="email">your-email@gmail.com</a>
+            <span class="email-label">Official Support Email</span>
+            <a href="mailto:aisahabalive@gmail.com" class="email-link">aisahabalive@gmail.com</a>
         </div>
 
-        <div class="support-text">
-            <p><strong>Note:</strong> Hum aam taur par 24-48 ghanton ke bhitar reply karte hain. Technical support aur business queries ke liye upar diye gaye email par sampark karein.</p>
+        <div class="footer-note">
+            <strong>Real-Time Support:</strong> Hum 24 se 48 ghanton ke bhitar reply karte hain. Technical queries aur business collaborations ke liye upar diye gaye email par sampark karein.
         </div>
         
-        <p style="margin-top: 40px; font-weight: bold; color: #2c3e50;">AisaHab Infinite - Limited by Nothing.</p>
+        <div class="brand-footer">AISAHAB INFINITE - LIMITED BY NOTHING.</div>
     </div>
 </body>
 </html>
