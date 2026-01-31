@@ -3,69 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supreme V1000 Hybrid | Infinite Unlimited Universal World Space</title>
+    <title>Supreme V1000 | Infinite Unlimited Universal Space Base</title>
     
+    <meta name="google-site-verification" content="D7171q3X0s5Ex4sY7jGU8vZGBQxx66QlEoM1_tro78A" />
     <meta name="msvalidate.01" content="29BFD88F2AB4450D0FDD5065B71DAE7C" />
-    
-    <meta name="google-site-verification" content="google0acf3f0ed8fa5977" />
     <meta name="google-adsense-account" content="ca-pub-4743383342348497">
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4743383342348497" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
-        body { background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; overflow-x: hidden; }
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Inter:wght@300;600&display=swap');
+        
+        :root { --p-color: #0070f3; --s-color: #00dfd8; }
+        body { background: #000; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
         .orbitron { font-family: 'Orbitron', sans-serif; }
-        .gradient-text { background: linear-gradient(90deg, #0070f3, #00dfd8, #7928ca); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: shine 3s linear infinite; }
-        @keyframes shine { to { background-position: 200% center; } }
-        .glow-border { border: 1px solid rgba(0, 112, 243, 0.3); box-shadow: 0 0 20px rgba(0, 112, 243, 0.1); }
-        .space-bg { background: radial-gradient(circle at center, #111 0%, #000 100%); }
+        
+        /* Advanced Animations */
+        .gradient-text { 
+            background: linear-gradient(90deg, var(--p-color), var(--s-color), #7928ca, var(--p-color)); 
+            background-size: 300% auto; 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            animation: flow 4s linear infinite; 
+        }
+        @keyframes flow { to { background-position: 300% center; } }
+
+        .hero-glow {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 80vw; height: 80vw; background: radial-gradient(circle, rgba(0,112,243,0.15) 0%, rgba(0,0,0,0) 70%);
+            z-index: -1; pointer-events: none;
+        }
+
+        .glass-card {
+            background: rgba(10, 10, 10, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-pulse {
+            animation: pulse-blue 2s infinite;
+        }
+        @keyframes pulse-blue {
+            0% { box-shadow: 0 0 0 0 rgba(0, 112, 243, 0.4); }
+            70% { box-shadow: 0 0 0 20px rgba(0, 112, 243, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 112, 243, 0); }
+        }
     </style>
 </head>
-<body class="space-bg">
-    <nav class="p-6 border-b border-zinc-900 flex justify-between items-center sticky top-0 bg-black/80 backdrop-blur-md z-50">
-        <div class="orbitron font-black text-xl gradient-text">SUPREME V1000</div>
-        <div class="hidden md:flex space-x-6 text-[10px] uppercase font-bold tracking-[0.2em] text-zinc-500">
-            <a href="./index.html" class="hover:text-white transition">Portal</a>
-            <a href="./articles.html" class="hover:text-white transition">Data Core</a>
-            <a href="./about.html" class="hover:text-white transition">History</a>
-            <a href="./contact.html" class="hover:text-white transition">Link</a>
+<body class="bg-black">
+    <div class="hero-glow"></div>
+
+    <nav class="p-6 border-b border-white/5 flex justify-between items-center sticky top-0 bg-black/60 backdrop-blur-xl z-50">
+        <div class="orbitron font-black text-2xl tracking-tighter gradient-text">SUPREME V1000</div>
+        <div class="flex space-x-4 md:space-x-8 text-[10px] uppercase font-bold tracking-[0.3em] text-zinc-500">
+            <a href="./index.html" class="hover:text-blue-400 transition-colors">Portal</a>
+            <a href="./articles.html" class="hover:text-blue-400 transition-colors">Data</a>
         </div>
     </nav>
 
-    <header class="py-32 text-center relative">
-        <div class="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
-        <h1 class="orbitron text-6xl md:text-9xl font-black italic uppercase mb-6 tracking-tighter">
-            Infinite <span class="gradient-text">Unlimited</span>
+    <header class="py-32 px-6 text-center relative overflow-hidden">
+        <div class="orbitron text-[10px] md:text-xs mb-4 tracking-[1em] text-blue-500 font-bold uppercase">System Status: Active</div>
+        <h1 class="orbitron text-5xl md:text-8xl font-black italic uppercase mb-6 leading-none">
+            INFINITE <br> <span class="gradient-text">UNLIMITED</span>
         </h1>
-        <p class="text-blue-500 tracking-[0.8em] text-[12px] font-bold uppercase">Universal World Space Base 2026</p>
+        <p class="text-zinc-500 tracking-[0.5em] text-[10px] md:text-sm font-light">UNIVERSAL WORLD SPACE BASE • EST 2026</p>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 py-10 text-center">
-        <div class="bg-zinc-950/50 p-12 rounded-[50px] glow-border mb-16 backdrop-blur-sm">
-            <h2 class="orbitron text-3xl font-bold mb-8 text-zinc-100">Better Future Engine</h2>
-            <p class="text-zinc-400 text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-                The most powerful hybrid system ever built. Connecting dimensions through 
-                <span class="text-blue-500 font-bold">Infinite Unlimited Universal World Space</span>.
+    <main class="max-w-4xl mx-auto px-6 pb-32 text-center">
+        <div class="glass-card p-8 md:p-16 rounded-[40px] md:rounded-[60px] relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+            
+            <h2 class="orbitron text-2xl md:text-4xl font-bold mb-6">Better Future Engine</h2>
+            <p class="text-zinc-400 text-base md:text-xl leading-relaxed mb-12 font-light">
+                Connected to the <span class="text-white font-semibold">Universal Hybrid Core</span>. 
+                Processing infinite data streams for a seamless unlimited future.
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="./articles.html" class="bg-white text-black px-10 py-4 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-blue-500 hover:text-white transition-all duration-500">
-                    Access System
-                </a>
-            </div>
+            
+            <a href="./articles.html" class="btn-pulse inline-block bg-blue-600 hover:bg-blue-500 text-white px-12 py-5 rounded-full text-xs font-black uppercase tracking-widest transition-all duration-300 transform hover:scale-105">
+                Access System Hub
+            </a>
         </div>
 
-        <div class="py-12 border-y border-zinc-900/50">
+        <div class="mt-20 py-10 border-y border-white/5">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4743383342348497" data-ad-slot="default" data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
     </main>
 
-    <footer class="bg-black py-24 text-center border-t border-zinc-900">
-        <div class="mb-10 opacity-50 uppercase tracking-[1em] text-[10px]">Transmission End</div>
-        <a href="mailto:aisahabalive@gmail.com" class="text-2xl font-bold gradient-text">aisahabalive@gmail.com</a>
-        <p class="mt-12 text-zinc-700 text-[9px] uppercase tracking-[0.5em]">© 2026 SUPREME HYBRID SYSTEM • INFINITE EDITION</p>
+    <footer class="py-20 text-center border-t border-white/5 bg-zinc-950/30">
+        <a href="mailto:aisahabalive@gmail.com" class="text-xl md:text-3xl font-bold gradient-text opacity-80 hover:opacity-100 transition">aisahabalive@gmail.com</a>
+        <div class="mt-10 text-zinc-600 text-[8px] md:text-[10px] uppercase tracking-[0.8em]">
+            © 2026 SUPREME HYBRID • UNIVERSAL EDITION
+        </div>
     </footer>
 </body>
 </html>
