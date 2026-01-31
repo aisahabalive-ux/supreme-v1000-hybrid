@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://supreme-v1000-hybrid.vercel.app/sitemap.xml
-
+Sitemap: https://aisahabalive-ux.github.io/supreme-v1000-hybrid/sitemap.xml
