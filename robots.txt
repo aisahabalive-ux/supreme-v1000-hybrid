@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://aisahabalive-ux.github.io/supreme-v1000-hybrid/sitemap.xml
+
+# Sitemap link ko crawler ke liye easy banayein
+Sitemap: https://aisahabalive-ux.github.io/sitemap.xml
