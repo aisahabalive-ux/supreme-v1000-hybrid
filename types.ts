@@ -1,12 +1,41 @@
-export interface HybridSystemData {
-  status: string;
-  engine: string;
-  version: string;
-  lastSync: string;
+export enum ViewType {
+  GATEWAY = 'GATEWAY',
+  CHIP_ENGINE = 'CHIP_ENGINE',
+  BLOG = 'BLOG',
+  BANKING = 'BANKING',
+  ADSENSE_RESOLUTION = 'ADSENSE_RESOLUTION',
+  INFINITE_ALL_TYPE_FORGE = 'INFINITE_ALL_TYPE_FORGE',
+  REALITY_EVIDENCE = 'REALITY_EVIDENCE',
+  VERCEL_MESH_SYNC = 'VERCEL_MESH_SYNC',
+  SINGULARITY_PULSE = 'SINGULARITY_PULSE',
+  REALITY_THRESHOLD = 'REALITY_THRESHOLD',
+  PROFIT_TIMELINE = 'PROFIT_TIMELINE',
+  SOVEREIGN_BENEFIT = 'SOVEREIGN_BENEFIT',
+  IDENTITY_HANDSHAKE = 'IDENTITY_HANDSHAKE',
+  MASTER_EXPLANATION = 'MASTER_EXPLANATION',
+  BUSINESS_VERDICT = 'BUSINESS_VERDICT',
+  MASTER_HARDENING = 'MASTER_HARDENING',
+  MASTER_PLAN = 'MASTER_PLAN',
+  VIRAL_PULSE = 'VIRAL_PULSE',
+  REALITY_PERSISTENCE = 'REALITY_PERSISTENCE',
+  MASTER_CHECKLIST = 'MASTER_CHECKLIST',
+  ORBITAL_REGISTRY = 'ORBITAL_REGISTRY',
+  REAL_WORLD_SYNC = 'REAL_WORLD_SYNC'
 }
 
-export interface NexusState {
-  isActive: boolean;
-  loadFactor: number;
-  efficiency: string;
+export interface ChatMessage {
+  id: string;
+  role: 'user' | 'model';
+  text: string;
+  timestamp: number;
+}
+
+export interface SiliconProject {
+  id: string;
+  name: string;
+  timestamp: number;
+  hdlCode: string;
+  status?: string;
+  specification: string;
+  marketValueUSD?: number;
 }
