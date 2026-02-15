@@ -3,14 +3,19 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-// Yahan 'as HTMLElement' add karne se error chala jayega
-const rootElement = document.getElementById('root') as HTMLElement;
+// 1. Element ko fetch karein
+const rootElement = document.getElementById('root');
 
-if (rootElement) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
+// 2. Check karein ki element null toh nahi hai
+if (!rootElement) {
+  throw new Error("Failed to find the root element. Check your index.html");
 }
+
+// 3. Root create karein aur render karein
+const root = ReactDOM.createRoot(rootElement);
+
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
