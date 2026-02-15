@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/supreme-v1000-hybrid/', // Aapki repo ka naam yahan hona chahiye
   build: {
     outDir: 'dist',
     emptyOutDir: true,
   },
-  publicDir: 'public' 
 });
