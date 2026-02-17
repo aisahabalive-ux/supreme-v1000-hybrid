@@ -35,7 +35,7 @@ export interface SiliconProject {
   name: string;
   timestamp: number;
   hdlCode: string;
-  status?: string;
+  status: string;
   specification: string;
-  marketValueUSD?: number;
+  marketValueUSD: number;
 }
