@@ -14,19 +14,19 @@ const Home = () => (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-12">
       <div className="p-6 border border-white/5 bg-white/5 rounded-xl">
         <h3 className="text-2xl font-bold">99.9%</h3>
-        <p className="text-[10px] text-zinc-500 uppercase">Uptime Accuracy</p>
+        <p className="text-[10px] text-zinc-500 uppercase italic">Uptime Accuracy</p>
       </div>
       <div className="p-6 border border-white/5 bg-white/5 rounded-xl text-cyan-400">
         <h3 className="text-2xl font-bold">0.02ms</h3>
-        <p className="text-[10px] text-zinc-500 uppercase">Neural Latency</p>
+        <p className="text-[10px] text-zinc-500 uppercase italic">Neural Latency</p>
       </div>
       <div className="p-6 border border-white/5 bg-white/5 rounded-xl">
         <h3 className="text-2xl font-bold">∞</h3>
-        <p className="text-[10px] text-zinc-500 uppercase">Scaling Nodes</p>
+        <p className="text-[10px] text-zinc-500 uppercase italic">Scaling Nodes</p>
       </div>
       <div className="p-6 border border-white/5 bg-white/5 rounded-xl">
         <h3 className="text-2xl font-bold">RSA 8K</h3>
-        <p className="text-[10px] text-zinc-500 uppercase">Security Level</p>
+        <p className="text-[10px] text-zinc-500 uppercase italic">Security Level</p>
       </div>
     </div>
   </div>
@@ -35,14 +35,14 @@ const Home = () => (
 const Articles = () => (
   <div className="max-w-5xl mx-auto p-12">
     <h1 className="text-4xl font-black orbitron blue-glow mb-12 uppercase">Knowledge Archive</h1>
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-2 gap-8 text-left">
       <div className="p-8 border border-white/10 rounded-2xl bg-white/5 hover:border-cyan-500/30 transition">
         <h2 className="text-2xl font-bold text-cyan-400 mb-4">Neural Sync Protocol</h2>
-        <p className="text-zinc-400">Supreme V1000 real-time neural data sync optimized for 2026.</p>
+        <p className="text-zinc-400">Supreme V1000 real-time neural data sync optimized for 2026 standards.</p>
       </div>
       <div className="p-8 border border-white/10 rounded-2xl bg-white/5 hover:border-cyan-500/30 transition">
         <h2 className="text-2xl font-bold text-cyan-400 mb-4">Infinite Mesh Scaling</h2>
-        <p className="text-zinc-400">Hardware-level integration for global node expansion.</p>
+        <p className="text-zinc-400">Hardware-level integration for global node expansion and security.</p>
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@ const About = () => (
     <h1 className="text-4xl font-black orbitron blue-glow mb-8 uppercase">Our Mission</h1>
     <p className="text-xl text-cyan-400 font-bold mb-6 italic">"Redefining Computational Limits"</p>
     <p className="text-zinc-400 leading-relaxed text-lg">
-      Humara lakshya hardware aur intelligence ko seamlessly sync karke 2026 ke technology standards ko lead karna hai.
+      Humara lakshya hardware aur neural intelligence ko seamlessly sync karke 2026 ke technology standards ko lead karna hai.
     </p>
   </div>
 );
@@ -61,18 +61,14 @@ const About = () => (
 const Privacy = () => (
   <div className="max-w-4xl mx-auto p-12 text-zinc-400 leading-relaxed">
     <h1 className="text-4xl font-black orbitron blue-glow mb-10 uppercase">Privacy Policy</h1>
-    <div className="space-y-8">
+    <div className="space-y-8 text-left">
       <section className="p-8 border border-white/5 bg-white/5 rounded-2xl">
-        <h2 className="text-white font-bold mb-4 uppercase tracking-widest text-xs">01. Data Protection</h2>
-        <p className="text-sm">Supreme V1000 RSA 8K encryption ka upyog karta hai taaki aapka neural data transfer puri tarah secure rahe. Hum koi bhi sensitive personal data store nahi karte.</p>
+        <h2 className="text-white font-bold mb-4 uppercase tracking-widest text-xs">01. Data Shield</h2>
+        <p className="text-sm">Supreme V1000 RSA 8K encryption use karta hai. Hum koi sensitive personal data store nahi karte.</p>
       </section>
       <section className="p-8 border border-white/5 bg-white/5 rounded-2xl">
         <h2 className="text-white font-bold mb-4 uppercase tracking-widest text-xs">02. Node Security</h2>
-        <p className="text-sm">Aapka IP aur connection data sirf security protocols aur latency monitoring ke liye temporary log kiya jata hai taaki 99.9% accuracy bani rahe.</p>
-      </section>
-      <section className="p-8 border border-white/5 bg-white/5 rounded-2xl">
-        <h2 className="text-white font-bold mb-4 uppercase tracking-widest text-xs">03. Contact Uplink</h2>
-        <p className="text-sm">Agar aap humare secure ports par contact karte hain, toh aapka email sirf support purposes ke liye secure servers par process kiya jata hai.</p>
+        <p className="text-sm">Aapka connection data sirf security protocols aur latency monitoring ke liye temporary log kiya jata hai.</p>
       </section>
     </div>
   </div>
@@ -82,14 +78,14 @@ const Contact = () => (
   <div className="max-w-2xl mx-auto p-20 text-center">
     <h1 className="text-4xl font-black orbitron blue-glow mb-10 uppercase">Secure Ports</h1>
     <div className="p-10 border border-cyan-500/20 rounded-[2rem] bg-cyan-500/5 backdrop-blur-xl">
-      <p className="text-zinc-500 uppercase text-[10px] tracking-widest mb-4">Official Uplink</p>
-      <p className="text-3xl font-bold text-white mb-6 underline decoration-cyan-500/30 underline-offset-8">contact@supreme-v1000.io</p>
+      <p className="text-zinc-500 uppercase text-[10px] tracking-widest mb-4 italic">Official Uplink</p>
+      <p className="text-3xl font-bold text-white mb-6">contact@supreme-v1000.io</p>
       <p className="text-[10px] text-zinc-500 uppercase">Global Node Alpha-01</p>
     </div>
   </div>
 );
 
-// --- Main App with Navigation ---
+// --- Main App Setup ---
 
 export default function App() {
   return (
@@ -102,7 +98,7 @@ export default function App() {
             <Link to="/articles" className="hover:text-cyan-400 transition">Articles</Link>
             <Link to="/about" className="hover:text-cyan-400 transition">Mission</Link>
             <Link to="/privacy-policy" className="hover:text-cyan-400 transition">Legal</Link>
-            <Link to="/contact" className="hover:text-cyan-400 transition text-cyan-400 border border-cyan-500/20 px-4 py-1 rounded-full">Secure Ports</Link>
+            <Link to="/contact" className="hover:text-cyan-400 text-cyan-400 border border-cyan-500/20 px-4 py-1 rounded-full">Secure Ports</Link>
           </div>
         </nav>
 
@@ -115,14 +111,10 @@ export default function App() {
         </Routes>
 
         <footer className="py-20 border-t border-white/5 text-center mt-20 opacity-40">
-          <div className="flex justify-center space-x-6 text-[10px] uppercase tracking-widest mb-4">
-            <Link to="/privacy-policy">Privacy</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
-          </div>
           <p className="orbitron text-[9px] tracking-[0.5em]">© 2026 INFINITE HYBRID CHIP PROJECT</p>
         </footer>
       </div>
     </Router>
   );
-              }
+            }
+
