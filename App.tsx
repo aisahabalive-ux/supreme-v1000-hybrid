@@ -1,112 +1,123 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-// --- Futuristic Components ---
-
+// --- 1. HOME COMPONENT ---
 const Home = () => (
   <div className="text-center py-24 px-6">
-    <div className="inline-block px-4 py-1 mb-6 border border-cyan-500/30 rounded-full text-[10px] text-cyan-400 uppercase tracking-widest animate-pulse">
-      System Status: Fully Operational • v1.0.7
+    <div className="inline-block px-4 py-1 mb-6 border border-cyan-500/30 rounded-full text-cyan-400 text-sm">
+      System Status: Fully Operational v1.0.7
     </div>
-    <h1 className="text-6xl md:text-8xl font-black orbitron mb-8 leading-tight tracking-tighter">
-      HYBRID <span className="blue-glow font-black">NEURAL</span><br />ARCHITECTURE
+    <h1 className="text-6xl md:text-8xl font-black orbitron mb-8 leading-tight text-white">
+      HYBRID <span className="blue-glow text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">V1000</span>
     </h1>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-12">
-      <div className="p-6 border border-white/5 bg-white/5 rounded-xl">
-        <h3 className="text-2xl font-bold">99.9%</h3>
-        <p className="text-[10px] text-zinc-500 uppercase italic">Uptime Accuracy</p>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-12">
+      <div className="p-6 border border-white/10 bg-white/5 rounded-xl">
+        <h3 className="text-xl font-bold text-white mb-2">Neural Link</h3>
+        <p className="text-zinc-400 text-sm uppercase italic">Biometric Integration</p>
       </div>
-      <div className="p-6 border border-white/5 bg-white/5 rounded-xl text-cyan-400">
-        <h3 className="text-2xl font-bold">0.02ms</h3>
-        <p className="text-[10px] text-zinc-500 uppercase italic">Neural Latency</p>
+      <div className="p-6 border border-white/10 bg-white/5 rounded-xl">
+        <h3 className="text-xl font-bold text-white mb-2">RSA-8K</h3>
+        <p className="text-zinc-400 text-sm uppercase italic">Military Grade Security</p>
       </div>
-      <div className="p-6 border border-white/5 bg-white/5 rounded-xl">
-        <h3 className="text-2xl font-bold">∞</h3>
-        <p className="text-[10px] text-zinc-500 uppercase italic">Scaling Nodes</p>
-      </div>
-      <div className="p-6 border border-white/5 bg-white/5 rounded-xl">
-        <h3 className="text-2xl font-bold">RSA 8K</h3>
-        <p className="text-[10px] text-zinc-500 uppercase italic">Security Level</p>
+      <div className="p-6 border border-white/10 bg-white/5 rounded-xl">
+        <h3 className="text-xl font-bold text-white mb-2">Global Node</h3>
+        <p className="text-zinc-400 text-sm uppercase italic">Zero Latency Sync</p>
       </div>
     </div>
   </div>
 );
 
+// --- 2. ARTICLES COMPONENT ---
 const Articles = () => (
   <div className="max-w-5xl mx-auto p-12">
-    <h1 className="text-4xl font-black orbitron blue-glow mb-12 uppercase">Knowledge Archive</h1>
+    <h1 className="text-4xl font-bold orbitron text-white blue-glow mb-12 uppercase">Latest Articles</h1>
     <div className="grid md:grid-cols-2 gap-8 text-left">
-      <div className="p-8 border border-white/10 rounded-2xl bg-white/5 hover:border-cyan-500/30 transition">
-        <h2 className="text-2xl font-bold text-cyan-400 mb-4">Neural Sync Protocol</h2>
-        <p className="text-zinc-400">Supreme V1000 real-time neural data sync optimized for 2026 standards.</p>
+      <div className="p-8 border border-white/10 rounded-2xl bg-white/5 hover:border-cyan-500/50 transition">
+        <h2 className="text-2xl font-bold text-cyan-400 mb-4">The Future of Neural Sync</h2>
+        <p className="text-zinc-400 leading-relaxed">Exploring how Supreme V1000 is bridging the gap between human consciousness and digital architecture.</p>
       </div>
-      <div className="p-8 border border-white/10 rounded-2xl bg-white/5 hover:border-cyan-500/30 transition">
-        <h2 className="text-2xl font-bold text-cyan-400 mb-4">Infinite Mesh Scaling</h2>
-        <p className="text-zinc-400">Hardware-level integration for global node expansion and security.</p>
+      <div className="p-8 border border-white/10 rounded-2xl bg-white/5 hover:border-cyan-500/50 transition">
+        <h2 className="text-2xl font-bold text-cyan-400 mb-4">Hardware Integration</h2>
+        <p className="text-zinc-400 leading-relaxed">A deep dive into the next generation of global node alpha connectivity and RSA encryption.</p>
       </div>
     </div>
   </div>
 );
 
+// --- 3. ABOUT COMPONENT ---
 const About = () => (
   <div className="max-w-4xl mx-auto p-20 text-center">
-    <h1 className="text-4xl font-black orbitron blue-glow mb-8 uppercase">Our Mission</h1>
-    <p className="text-xl text-cyan-400 font-bold mb-6 italic">"Redefining Computational Limits"</p>
-    <p className="text-zinc-400 leading-relaxed text-lg">
-      Humara lakshya hardware aur neural intelligence ko seamlessly sync karke 2026 ke technology standards ko lead karna hai.
+    <h1 className="text-4xl font-bold orbitron text-white blue-glow mb-8 uppercase">About Us</h1>
+    <p className="text-xl text-cyan-400 font-bold mb-6 italic">Redefining Human-Machine Symbiosis</p>
+    <p className="text-zinc-300 leading-relaxed text-lg">
+      Founded in 2026, Supreme V1000 is a pioneer in neural intelligence. We develop high-end hardware solutions 
+      that allow seamless data synchronization between biological and digital systems. Our goal is to make 
+      technology feel like a natural extension of the self.
     </p>
   </div>
 );
 
+// --- 4. PRIVACY POLICY COMPONENT ---
 const Privacy = () => (
-  <div className="max-w-4xl mx-auto p-12 text-zinc-400 leading-relaxed">
-    <h1 className="text-4xl font-black orbitron blue-glow mb-10 uppercase">Privacy Policy</h1>
-    <div className="space-y-8 text-left">
-      <section className="p-8 border border-white/5 bg-white/5 rounded-2xl">
-        <h2 className="text-white font-bold mb-4 uppercase tracking-widest text-xs">01. Data Shield</h2>
-        <p className="text-sm">Supreme V1000 RSA 8K encryption use karta hai. Hum koi sensitive personal data store nahi karte.</p>
-      </section>
-      <section className="p-8 border border-white/5 bg-white/5 rounded-2xl">
-        <h2 className="text-white font-bold mb-4 uppercase tracking-widest text-xs">02. Node Security</h2>
-        <p className="text-sm">Aapka connection data sirf security protocols aur latency monitoring ke liye temporary log kiya jata hai.</p>
-      </section>
-    </div>
+  <div className="max-w-4xl mx-auto p-12 text-zinc-400 leading-relaxed text-left">
+    <h1 className="text-4xl font-bold text-white orbitron mb-10 uppercase">Privacy Policy</h1>
+    <section className="mb-10 p-8 border border-white/10 bg-white/5 rounded-2xl">
+      <h2 className="text-white text-2xl font-bold mb-4">Data Protection</h2>
+      <p className="mb-4">Supreme V1000 uses RSA 8K encryption to ensure your neural data is never compromised.</p>
+      <h2 className="text-white text-2xl font-bold mb-4">Information Usage</h2>
+      <p>We do not store personal memories or biological identifiers on public cloud servers. All processing is done locally on the V1000 Hybrid chip.</p>
+    </section>
   </div>
 );
 
+// --- 5. CONTACT COMPONENT ---
 const Contact = () => (
-  <div className="max-w-2xl mx-auto p-20 text-center">
-    <h1 className="text-4xl font-black orbitron blue-glow mb-10 uppercase">Secure Ports</h1>
-    <div className="p-10 border border-cyan-500/20 rounded-[2rem] bg-cyan-500/5 backdrop-blur-xl">
-      <p className="text-zinc-500 uppercase text-[10px] tracking-widest mb-4 italic">Official Uplink</p>
-      <p className="text-3xl font-bold text-white mb-6">contact@supreme-v1000.io</p>
-      <p className="text-[10px] text-zinc-500 uppercase">Global Node Alpha-01</p>
+  <div className="max-w-4xl mx-auto p-20 text-center">
+    <h1 className="text-4xl font-bold orbitron text-white blue-glow mb-10 uppercase">Connect With Us</h1>
+    <div className="p-10 border border-cyan-500/30 rounded-3xl bg-cyan-500/5">
+      <p className="text-zinc-400 uppercase text-xs tracking-widest mb-4">Global Communication Hub</p>
+      <h3 className="text-3xl font-bold text-white mb-6">support@v1000-hybrid.ai</h3>
+      <p className="text-zinc-500 italic">Expected Response Time: &lt; 2ms (Neural Link Required)</p>
     </div>
   </div>
 );
 
-// --- Main App Setup ---
-
+// --- MAIN APP SETUP ---
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-[#050505] text-white selection:bg-cyan-500 selection:text-black">
-        <nav className="p-8 border-b border-white/5 flex flex-wrap justify-between items-center sticky top-0 bg-black/90 backdrop-blur-2xl z-50">
-          <Link to="/" className="orbitron text-2xl font-black blue-glow tracking-tighter">SUPREME V1000</Link>
-          <div className="flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-400">
+      <div className="min-h-screen bg-[#050505] text-white selection:bg-cyan-500/30">
+        {/* Navigation Bar */}
+        <nav className="p-8 border-b border-white/5 flex flex-wrap justify-between items-center bg-[#050505]/80 backdrop-blur-md sticky top-0 z-50">
+          <Link to="/" className="orbitron text-2xl font-bold blue-glow">V1000</Link>
+          <div className="flex space-x-8 text-[13px] font-bold uppercase tracking-widest">
             <Link to="/" className="hover:text-cyan-400 transition">Core</Link>
             <Link to="/articles" className="hover:text-cyan-400 transition">Articles</Link>
-            <Link to="/about" className="hover:text-cyan-400 transition">Mission</Link>
-            <Link to="/privacy-policy" className="hover:text-cyan-400 transition">Legal</Link>
-            <Link to="/contact" className="hover:text-cyan-400 text-cyan-400 border border-cyan-500/20 px-4 py-1 rounded-full">Secure Ports</Link>
+            <Link to="/about" className="hover:text-cyan-400 transition">About</Link>
+            <Link to="/privacy-policy" className="hover:text-cyan-400 transition">Privacy</Link>
+            <Link to="/contact" className="hover:text-cyan-400 transition">Contact</Link>
           </div>
         </nav>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/privacy-policy" element={<Privacy />} />
+        {/* Content Routes */}
+        <main className="min-h-[70vh]">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/privacy-policy" element={<Privacy />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+
+        {/* Footer */}
+        <footer className="py-20 border-t border-white/5 text-center bg-black">
+          <p className="orbitron text-zinc-600 text-[10px] tracking-[0.5em]">© 2026 INFINITE HYBRID SYSTEM</p>
+        </footer>
+      </div>
+    </Router>
+  );
+        }
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
