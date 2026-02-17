@@ -1,3 +1,5 @@
+// SUPREME V1000 - Corrected types.ts file
+
 export enum ViewType {
   GATEWAY = 'GATEWAY',
   CHIP_ENGINE = 'CHIP_ENGINE',
@@ -37,5 +39,5 @@ export interface SiliconProject {
   hdlCode: string;
   status: string;
   specification: string;
-  marketValueUSD: number;
+  marketValueUSD?: number;
 }
