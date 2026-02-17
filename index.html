@@ -4,26 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- SEO and Verification -->
     <meta name="google-site-verification" content="DTs71q3SDt5EKAPY7j5NBkvZEBCux6IQUowW_tra78" />
-    
     <meta name="google-adsense-account" content="ca-pub-4743383342348497" />
+    
+    <!-- AdSense Script (Fixed the 'crossorigin' part) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4743383342348497" crossorigin="anonymous"></script>
 
     <title>SUPREME V1000 | Hybrid Chip Engine</title>
-    
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 
     <style>
-        body { background: #050505; color: #fff; margin: 0; overflow-x: hidden; }
-        .orbitron { font-family: 'Orbitron', sans-serif; }
-        .glow-text { color: #fff; text-shadow: 0 0 15px rgba(29, 242, 254, 0.6); }
+        body { 
+            background: #050505; 
+            color: #fff; 
+            margin: 0; 
+            overflow-x: hidden; 
+            font-family: 'Orbitron', sans-serif; /* Orbitron ko default font bana diya gaya hai */
+        }
+        .glow-text { 
+            color: #fff; 
+            text-shadow: 0 0 15px rgba(29, 242, 254, 0.7); 
+        }
     </style>
 </head>
 <body>
     <div id="root"></div>
 
+    <!-- Main JS Entry Point -->
     <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
-
