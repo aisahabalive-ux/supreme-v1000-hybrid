@@ -1,16 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Repository path ke liye './' sabse best hai
+  // Is path ko apni repository name ke mutabiq sahi rakhein
+  base: '/supreme-v1000-hybrid/', 
   build: {
     outDir: 'dist',
     emptyOutDir: true,
     sourcemap: false
-  },
-  server: {
-    port: 3000
   }
 });
