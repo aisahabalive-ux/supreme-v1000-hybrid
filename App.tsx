@@ -117,15 +117,5 @@ export default function App() {
       </div>
     </Router>
   );
-        }
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-
-        <footer className="py-20 border-t border-white/5 text-center mt-20 opacity-40">
-          <p className="orbitron text-[9px] tracking-[0.5em]">© 2026 INFINITE HYBRID CHIP PROJECT</p>
-        </footer>
-      </div>
-    </Router>
-  );
-            }
-
+              }
+      
