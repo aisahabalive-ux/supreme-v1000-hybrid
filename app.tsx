@@ -24,4 +24,3 @@ function HomeContent() {
     </div>
   );
 }
-
