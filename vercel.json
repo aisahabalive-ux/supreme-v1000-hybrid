@@ -1,9 +1,1 @@
-{
-  "version": 2,
-  "framework": "vite",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "cleanUrls": true,
-  "outputDirectory": "dist"
-}
+{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
