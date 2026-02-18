@@ -1,13 +1,9 @@
 {
   "version": 2,
   "framework": "vite",
-  "name": "supreme-v1000-hybrid",
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "cleanUrls": true,
-  "trailingSlash": false
+  "outputDirectory": "dist"
 }
