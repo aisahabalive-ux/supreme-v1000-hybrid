@@ -1,83 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Supreme V1000 Hybrid Chip Engine - Advanced neural computing architecture for 2026." />
-    
-    <meta name="google-site-verification" content="BTs7lq3S0t5EKAPY7j5NBkvZEBCuxSIQUawM_tra78" />
-    <meta name="google-adsense-account" content="ca-pub-4743383342348497" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4743383342348497" crossorigin="anonymous"></script>
-    
-    <title>SUPREME V1000 | Hybrid Neural Engine</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    
-    <style>
-        :root { --cyan: #00f2ff; --dark: #020202; }
-        body { background: var(--dark); color: #fff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; margin: 0; }
-        .orbitron { font-family: 'Orbitron', sans-serif; }
-        .glow-text { text-shadow: 0 0 15px rgba(0, 242, 255, 0.6); }
-        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .content-card { background: #080808; border: 1px solid #111; padding: 40px; border-radius: 24px; margin-bottom: 30px; }
-        h2 { font-family: 'Orbitron'; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; font-weight: 900; }
-        p { color: #888; line-height: 1.8; margin-bottom: 1.2rem; }
-    </style>
-</head>
-<body>
+import React from 'react';
 
-    <div id="root">
-        <nav class="fixed top-0 w-full z-50 glass py-4 px-8 flex justify-between items-center">
-            <div class="orbitron font-black text-xl text-cyan-500 glow-text">V1000_SUPREME</div>
-            <div class="hidden md:flex gap-6 text-[10px] orbitron font-bold tracking-widest">
-                <a href="#articles" class="hover:text-cyan-400">RESEARCH</a>
-                <a href="#about" class="hover:text-cyan-400">MISSION</a>
-                <a href="#privacy" class="hover:text-cyan-400">SECURITY</a>
-                <a href="#contact" class="hover:text-cyan-400">PORTAL</a>
-            </div>
-        </nav>
+const App: React.FC = () => {
+  return (
+    <div className="bg-[#020202] text-white font-['Inter'] scroll-smooth min-h-screen">
+      
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full z-50 bg-white/5 backdrop-blur-md py-4 px-8 flex justify-between items-center border-b border-white/5">
+        <div className="font-['Orbitron'] font-black text-xl text-cyan-500 [text-shadow:_0_0_15px_rgba(0,242,255,0.6)] cursor-pointer">
+          V1000_SUPREME
+        </div>
+        <div className="flex gap-6 text-[10px] font-['Orbitron'] font-bold tracking-widest">
+          <a href="#articles" className="hover:text-cyan-400 transition-colors uppercase">Research</a>
+          <a href="#about" className="hover:text-cyan-400 transition-colors uppercase">Mission</a>
+          <a href="#contact" className="hover:text-cyan-400 transition-colors uppercase">Portal</a>
+        </div>
+      </nav>
 
-        <header class="min-h-screen flex flex-col items-center justify-center text-center px-4">
-            <h1 class="text-6xl md:text-9xl font-black orbitron mb-4 leading-none tracking-tighter">HYBRID<br><span class="glow-text text-cyan-500">ENGINE</span></h1>
-            <p class="orbitron text-[10px] tracking-[0.5em] text-cyan-400 uppercase">Core_System_2026</p>
-        </header>
+      {/* Hero Section */}
+      <header className="min-h-screen flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#083344_0%,_transparent_70%)] opacity-20 -z-10"></div>
+        <h1 className="text-6xl md:text-9xl font-black font-['Orbitron'] mb-4 leading-none tracking-tighter">
+          HYBRID<br />
+          <span className="text-cyan-500 [text-shadow:_0_0_20px_rgba(0,242,255,0.8)]">ENGINE</span>
+        </h1>
+        <p className="font-['Orbitron'] text-[10px] tracking-[0.5em] text-cyan-400 uppercase opacity-70">
+          Core_System_2026
+        </p>
+      </header>
 
-        <section id="articles" class="max-w-5xl mx-auto py-20 px-6">
-            <h2>Research_&_Chip_Design</h2>
-            <div class="content-card">
-                <h3 class="text-2xl font-bold orbitron text-white mb-6 underline decoration-cyan-500">Neural-Silicon Integration v4.0</h3>
-                <p>Supreme V1000 Hybrid Engine represents a paradigm shift in how we perceive computing power. Unlike traditional silicon architectures, the V1000 utilizes a proprietary hybrid layer that merges biological processing logic with high-speed quantum circuits.</p>
-                <p>Advanced Thermal Dynamics: Is chip design mein aisi veins hain jo biological circulatory systems ki tarah kaam karti hain, jisse high workload mein bhi temperature 32°C se upar nahi jata.</p>
-            </div>
+      {/* Content Container */}
+      <main className="max-w-5xl mx-auto px-6 space-y-32 pb-20">
+        
+        {/* Research Section */}
+        <section id="articles" className="scroll-mt-32">
+          <h2 className="font-['Orbitron'] text-cyan-500 text-2xl tracking-widest mb-8 uppercase font-black">
+            Research_&_Chip_Design
+          </h2>
+          <div className="bg-[#080808] border border-[#111] p-10 rounded-3xl hover:border-cyan-500/50 transition-all duration-500">
+            <h3 className="text-2xl font-bold font-['Orbitron'] text-white mb-6 underline decoration-cyan-500 underline-offset-8">
+              Neural-Silicon Integration v4.0
+            </h3>
+            <p className="text-zinc-500 leading-loose mb-6">
+              Supreme V1000 Hybrid Engine represents a paradigm shift in how we perceive computing power. 
+              Unlike traditional silicon architectures, the V1000 utilizes a proprietary hybrid layer 
+              that merges biological processing logic with high-speed quantum circuits.
+            </p>
+            <p className="text-zinc-500 leading-loose">
+              <strong className="text-white">Advanced Thermal Dynamics:</strong> Is chip design mein aisi veins hain 
+              jo biological circulatory systems ki tarah kaam karti hain, jisse high workload mein bhi 
+              temperature <span className="text-cyan-400 font-bold">32°C</span> se upar nahi jata.
+            </p>
+          </div>
         </section>
 
-        <section id="about" class="max-w-5xl mx-auto py-20 px-6">
-            <h2>Our_Supreme_Mission</h2>
-            <div class="content-card">
-                <p class="text-2xl italic font-light text-zinc-300 border-l-4 border-cyan-500 pl-6 mb-8">"Humara lakshya hardware aur neural intelligence ko seamlessly sync karna hai."</p>
-                <p>V1000 Hybrid project hardware efficiency aur biological neural processing ka ek anokha sangam hai. Hum hardware ko itna smart bana rahe hain ki wo 2026 ki digital needs ko hardware level par hi solve kar sake.</p>
-            </div>
+        {/* Mission Section */}
+        <section id="about" className="scroll-mt-32">
+          <h2 className="font-['Orbitron'] text-cyan-500 text-2xl tracking-widest mb-8 uppercase font-black">
+            Our_Supreme_Mission
+          </h2>
+          <div className="bg-[#080808] border border-[#111] p-10 rounded-3xl">
+            <p className="text-2xl italic font-light text-zinc-300 border-l-4 border-cyan-500 pl-6 mb-8">
+              "Humara lakshya hardware aur neural intelligence ko seamlessly sync karna hai."
+            </p>
+            <p className="text-zinc-500 leading-loose">
+              V1000 Hybrid project hardware efficiency aur biological neural processing ka ek anokha sangam hai. 
+              Hum hardware ko itna smart bana rahe hain ki wo 2026 ki digital needs ko hardware level par hi solve kar sake.
+            </p>
+          </div>
         </section>
 
-        <section id="privacy" class="max-w-5xl mx-auto py-20 px-6">
-            <h2>Security_&_Privacy</h2>
-            <div class="content-card">
-                <p><strong>Google AdSense ID:</strong> ca-pub-4743383342348497</p>
-                <p>Supreme V1000 project biological identifiers store nahi karta. Hum Google AdSense use karte hain aur aapka data encrypted rehta hai. We strictly follow global privacy standards to ensure that your interaction remains secure.</p>
-            </div>
+        {/* Contact Section */}
+        <section id="contact" className="scroll-mt-32 text-center py-20">
+          <h2 className="font-['Orbitron'] text-cyan-500 text-2xl tracking-widest mb-12 uppercase font-black [text-shadow:_0_0_10px_rgba(0,242,255,0.4)]">
+            Secure_Uplink
+          </h2>
+          <div className="bg-white/5 backdrop-blur-xl p-12 md:p-24 rounded-[40px] border border-cyan-500/20 shadow-[0_0_50px_rgba(0,242,255,0.1)]">
+            <p className="font-['Orbitron'] text-[10px] tracking-widest text-cyan-500 mb-6 uppercase">
+              Direct Channel Active
+            </p>
+            <a 
+              href="mailto:aisahabalive@gmail.com" 
+              className="text-2xl md:text-5xl font-black font-['Orbitron'] hover:text-cyan-400 transition-all break-all underline underline-offset-8 decoration-1"
+            >
+              aisahabalive@gmail.com
+            </a>
+          </div>
         </section>
 
-        <section id="contact" class="max-w-5xl mx-auto py-40 px-6 text-center">
-            <h2 class="glow-text">Secure_Uplink</h2>
-            <div class="glass p-16 rounded-[40px] border border-cyan-500/20">
-                <p class="orbitron text-[10px] tracking-widest text-cyan-500 mb-6 uppercase">Direct Channel Active</p>
-                <a href="mailto:aisahabalive@gmail.com" class="text-3xl md:text-5xl font-black orbitron hover:text-cyan-400 transition-all break-all">aisahabalive@gmail.com</a>
-            </div>
-        </section>
+      </main>
+
+      {/* Footer */}
+      <footer className="py-10 text-center border-t border-white/5 opacity-40 text-[10px] font-['Orbitron'] tracking-[0.3em]">
+        &copy; 2026 V1000_SUPREME // NEURAL COMPUTING ARCHITECTURE
+      </footer>
     </div>
+  );
+};
 
-    <script type="module" src="/index.tsx"></script>
-</body>
-</html>
-          
+export default App;
