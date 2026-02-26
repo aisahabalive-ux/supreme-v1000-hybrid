@@ -16,39 +16,57 @@
     
     <style>
         :root { --cyan: #00f2ff; --dark: #020202; }
-        body { background: var(--dark); color: #fff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; margin: 0; }
+        body { 
+            background: var(--dark); 
+            color: #fff; 
+            font-family: 'Inter', sans-serif; 
+            scroll-behavior: smooth; 
+            margin: 0; 
+            overflow-x: hidden;
+        }
         .orbitron { font-family: 'Orbitron', sans-serif; }
         .glow-text { text-shadow: 0 0 15px rgba(0, 242, 255, 0.6); }
         .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .content-card { background: #080808; border: 1px solid #111; padding: 40px; border-radius: 24px; margin-bottom: 30px; }
+        .content-card { 
+            background: #080808; 
+            border: 1px solid #111; 
+            padding: 40px; 
+            border-radius: 24px; 
+            margin-bottom: 30px; 
+            transition: transform 0.3s ease;
+        }
+        .content-card:hover { transform: translateY(-5px); border-color: var(--cyan); }
         h2 { font-family: 'Orbitron'; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; font-weight: 900; }
         p { color: #888; line-height: 1.8; margin-bottom: 1.2rem; }
+        
+        /* Smooth Scroll Padding */
+        section { scroll-margin-top: 100px; }
     </style>
 </head>
 <body>
 
     <div id="root">
-        <nav class="fixed top-0 w-full z-50 glass py-4 px-8 flex justify-between items-center">
-            <div class="orbitron font-black text-xl text-cyan-500 glow-text">V1000_SUPREME</div>
-            <div class="hidden md:flex gap-6 text-[10px] orbitron font-bold tracking-widest">
-                <a href="#articles" class="hover:text-cyan-400">RESEARCH</a>
-                <a href="#about" class="hover:text-cyan-400">MISSION</a>
-                <a href="#privacy" class="hover:text-cyan-400">SECURITY</a>
-                <a href="#contact" class="hover:text-cyan-400">PORTAL</a>
+        <nav class="fixed top-0 w-full z-50 glass py-4 px-8 flex justify-between items-center border-b border-white/5">
+            <div class="orbitron font-black text-xl text-cyan-500 glow-text cursor-pointer">V1000_SUPREME</div>
+            <div class="flex gap-4 md:gap-8 text-[10px] orbitron font-bold tracking-widest">
+                <a href="#articles" class="hover:text-cyan-400 transition-colors">RESEARCH</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">MISSION</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">PORTAL</a>
             </div>
         </nav>
 
         <header class="min-h-screen flex flex-col items-center justify-center text-center px-4">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cyan-900/10 via-transparent to-transparent -z-10"></div>
             <h1 class="text-6xl md:text-9xl font-black orbitron mb-4 leading-none tracking-tighter">HYBRID<br><span class="glow-text text-cyan-500">ENGINE</span></h1>
-            <p class="orbitron text-[10px] tracking-[0.5em] text-cyan-400 uppercase">Core_System_2026</p>
+            <p class="orbitron text-[10px] tracking-[0.5em] text-cyan-400 uppercase opacity-70">Core_System_2026</p>
         </header>
 
         <section id="articles" class="max-w-5xl mx-auto py-20 px-6">
             <h2>Research_&_Chip_Design</h2>
             <div class="content-card">
-                <h3 class="text-2xl font-bold orbitron text-white mb-6 underline decoration-cyan-500">Neural-Silicon Integration v4.0</h3>
+                <h3 class="text-2xl font-bold orbitron text-white mb-6 underline decoration-cyan-500 underline-offset-8">Neural-Silicon Integration v4.0</h3>
                 <p>Supreme V1000 Hybrid Engine represents a paradigm shift in how we perceive computing power. Unlike traditional silicon architectures, the V1000 utilizes a proprietary hybrid layer that merges biological processing logic with high-speed quantum circuits.</p>
-                <p>Advanced Thermal Dynamics: Is chip design mein aisi veins hain jo biological circulatory systems ki tarah kaam karti hain, jisse high workload mein bhi temperature 32°C se upar nahi jata.</p>
+                <p><strong>Advanced Thermal Dynamics:</strong> Is chip design mein aisi veins hain jo biological circulatory systems ki tarah kaam karti hain, jisse high workload mein bhi temperature <span class="text-cyan-400">32°C</span> se upar nahi jata.</p>
             </div>
         </section>
 
@@ -62,21 +80,30 @@
 
         <section id="privacy" class="max-w-5xl mx-auto py-20 px-6">
             <h2>Security_&_Privacy</h2>
-            <div class="content-card">
-                <p><strong>Google AdSense ID:</strong> ca-pub-4743383342348497</p>
+            <div class="content-card border-dashed">
+                <p class="mb-4"><span class="text-cyan-500 font-bold">ADSENSE_ID:</span> ca-pub-4743383342348497</p>
                 <p>Supreme V1000 project biological identifiers store nahi karta. Hum Google AdSense use karte hain aur aapka data encrypted rehta hai. We strictly follow global privacy standards to ensure that your interaction remains secure.</p>
             </div>
         </section>
 
         <section id="contact" class="max-w-5xl mx-auto py-40 px-6 text-center">
-            <h2 class="glow-text">Secure_Uplink</h2>
-            <div class="glass p-16 rounded-[40px] border border-cyan-500/20">
+            <h2 class="glow-text mb-12">Secure_Uplink</h2>
+            <div class="glass p-10 md:p-20 rounded-[40px] border border-cyan-500/20">
                 <p class="orbitron text-[10px] tracking-widest text-cyan-500 mb-6 uppercase">Direct Channel Active</p>
-                <a href="mailto:aisahabalive@gmail.com" class="text-3xl md:text-5xl font-black orbitron hover:text-cyan-400 transition-all break-all">aisahabalive@gmail.com</a>
+                <a href="mailto:aisahabalive@gmail.com" class="text-2xl md:text-5xl font-black orbitron hover:text-cyan-400 transition-all break-all underline decoration-1 underline-offset-8">aisahabalive@gmail.com</a>
             </div>
         </section>
+
+        <footer class="py-10 text-center border-t border-white/5 opacity-40 text-[10px] orbitron tracking-widest">
+            &copy; 2026 V1000_SUPREME // ALL RIGHTS RESERVED
+        </footer>
     </div>
 
-    <script type="module" src="/index.tsx"></script>
+    <script>
+        // Smooth scrolling handles automatically by CSS, 
+        // but we can add more logic here if needed.
+        console.log("V1000 System Online...");
+    </script>
 </body>
 </html>
+
